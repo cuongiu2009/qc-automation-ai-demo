@@ -77,7 +77,7 @@ miniProject/
 ### 1. Clone & Navigate to Project
 ```powershell
 git clone <your-repo-url>
-cd miniProject
+cd <your-repo-url>
 ```
 
 ### 2. Set Up Virtual Environment
