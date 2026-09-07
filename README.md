@@ -113,7 +113,7 @@ pytest tests/test_ai_demo_assertion.py -m "ai_demo" -v
 When the test fails, Gemini AI automatically provides a Root Cause Analysis.
 
 **Example output:**
-![AI Failure Analysis](Screenshot 2026-09-07 233611.png)
+![AI Failure Analysis](ai-analysis-demo.png)
 
 *The AI accurately identifies the `AssertionError`, explains why the actual title ("Swag Labs") didn't match the expectation ("Wrong Page Title"), and suggests updating the assertion.*
 
