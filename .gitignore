@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Playwright
+ms-playwright/
+playwright-report/
+test-results/
+
+# IDE
+.vscode/
+.idea/
+
+# Sensitive data
+.env
