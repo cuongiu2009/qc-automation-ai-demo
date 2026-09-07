@@ -99,21 +99,23 @@ To run all tests (Web UI and API) locally:
 pytest -v
 ```
 
----
+## 🤖 AI-Assisted Failure Analysis Demo
 
-## 🤖 Running AI Failure Analysis
+The framework includes a simulated failure demonstration to showcase the AI's diagnostic capabilities.
 
-To utilize the AI diagnostics feature, provide your Gemini API key:
-
-**Windows (PowerShell)**:
+### Running the AI Demo
+You can trigger an automated analysis by running the simulated assertion failure test:
 ```powershell
-$env:GEMINI_API_KEY="your_api_key_here"
+pytest tests/test_ai_demo_assertion.py -m "ai_demo" -v
 ```
 
-**Linux/macOS**:
-```bash
-export GEMINI_API_KEY="your_api_key_here"
-```
+### Analysis Example
+When the test fails, Gemini AI automatically provides a Root Cause Analysis.
+
+**Example output:**
+![AI Failure Analysis](Screenshot 2026-09-07 233611.png)
+
+*The AI accurately identifies the `AssertionError`, explains why the actual title ("Swag Labs") didn't match the expectation ("Wrong Page Title"), and suggests updating the assertion.*
 
 ---
 
